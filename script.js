@@ -11,10 +11,8 @@ function compute()
         var years = document.getElementById("years").value;
     //interest computation 
         var interest = principal * years * rate /100;
-        document.getElementById("result").innerText=interest;
     //No of Years computation
         var year = new Date().getFullYear()+parseInt(years);
-        document.getElementById("computed_year").innerText=year;
     //Worded output of the program
         var text_output = "If you deposit " + principal + ", \n at an interest rate of " + rate + "%. \n You will receive an amount of " + interest + ", \n in the year " + year;
         document.getElementById("output").innerText=text_output;
